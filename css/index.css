@@ -159,3 +159,72 @@ h1, h2, h3, h4, h5 {
 		line-height: 24px;
 	}
 }
+
+.about {
+	background-color: #f7f7f7;
+	padding: 40px 20px;
+	padding-left: 160px;
+	padding-right: 160px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+
+  .about.animate {
+	opacity: 1;
+  }
+  
+  .intro {
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .skills {
+	margin-top: 40px;
+  }
+  
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .col {
+	flex: 0 0 48%;
+  }
+  
+  .skill {
+	margin-bottom: 20px;
+  }
+  
+  .slider {
+	background-color: #ddd;
+	height: 10px;
+	border-radius: 5px;
+	position: relative;
+  }
+  
+  .fill {
+	background-color: #0066cc;
+	height: 100%;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+  
+  .percentage {
+	margin-left: 10px;
+	font-size: 18px;
+	font-weight: 500;
+  }
+
+  #projects .github {
+	color: black;
+	font-size: inherit;
+  }
+
+  #projects {
+	text-decoration: underline;
+	color: black;
+  }
+
