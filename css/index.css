@@ -294,6 +294,11 @@ nav ul li a {
 	text-align: center;
 }
 
+#recent-projects a {
+	text-decoration: none;
+	color: black;
+}
+
 #recent-projects h2 {
 	font-size: 36px;
 	margin-bottom: 30px;
@@ -373,6 +378,15 @@ nav ul li a {
 	opacity: 1;
 }
 
+#all-projects-div {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+#all-projects {
+	padding: 5px;
+}
 /*--------------------------------------------------------------
 # Newsletter Section
 --------------------------------------------------------------*/
