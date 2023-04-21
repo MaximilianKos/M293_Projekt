@@ -193,74 +193,67 @@ nav ul li a {
 }
 
 /*--------------------------------------------------------------
-# landing Section
+# About Section
 --------------------------------------------------------------*/
-#landing {
+
+.about {
 	height: 100vh;
-	background: url('/images/landing_background.png') top right no-repeat;
-	background-size: cover;
+	background-color: #f7f7f7;
+	background: linear-gradient(to bottom, #f7f7f7 0%, #69b7ff4d 100%);
+	padding: 250px 160px 0;
+}
+
+.intro {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.skills {
+	margin-top: 40px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.col {
+	flex: 0 0 48%;
+}
+
+.skill {
+	margin-bottom: 20px;
+}
+
+.slider {
+	background-color: #ddd;
+	height: 10px;
+	border-radius: 5px;
 	position: relative;
-	justify-content: center !important;
-	flex-direction: column !important;
-	display: flex !important;
 }
 
-@media (min-width: 992px) {
-	#landing {
-		padding-left: 160px;
-	}
+.fill {
+	background-color: #0066cc;
+	height: 100%;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-#landing h1 {
-	margin: 0;
-	font-size: 64px;
-	font-weight: 700;
-	line-height: 56px;
-	color: #edeff1;
+.percentage {
+	margin-left: 10px;
+	font-size: 18px;
+	font-weight: 500;
 }
 
-#landing p {
-	color: #edeff1;
-	margin: 15px 0 0 0;
-	font-size: 26px;
-	font-family: 'Poppins', sans-serif;
+#projects .github {
+	color: black;
+	font-size: inherit;
 }
 
-#landing p span {
-	color: #69b7ff;
-	letter-spacing: 1px;
-}
-
-#landing .social-links {
-	margin-top: 30px;
-}
-
-#landing .social-links a {
-	font-size: 24px;
-	display: inline-block;
-	color: #edeff1;
-	line-height: 1;
-	margin-right: 20px;
-	transition: 0.2s;
-}
-
-#landing .social-links a:hover {
-	color: #69b7ff;
-}
-
-@media (max-width: 992px) {
-	#landing {
-		text-align: center;
-	}
-
-	#landing h1 {
-		font-size: 32px;
-		line-height: 36px;
-	}
-
-	#landing p {
-		margin-top: 10px;
-		font-size: 20px;
-		line-height: 24px;
-	}
+#projects {
+	text-decoration: underline;
+	color: black;
 }
