@@ -289,6 +289,11 @@ nav ul li a {
 	margin-bottom: 10px;
 }
 
+.project-overlay #date {
+	color: #fff;
+	margin-bottom: 10px;
+}
+
 .project-overlay p {
 	font-size: 16px;
 	color: #fff;
@@ -321,7 +326,7 @@ nav ul li a {
 # Footer
 --------------------------------------------------------------*/
 footer {
-	padding: 50px 0 0;
+	padding: 50px 0;
 	text-align: center;
 }
 
