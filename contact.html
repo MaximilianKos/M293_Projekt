@@ -37,7 +37,12 @@
 					<input type="email" id="email" name="email" required />
 
 					<label for="subject">Subject:</label>
-					<input type="text" id="subject" name="subject" required />
+					<select type="text" id="subject" name="subject" required>
+						<option value="">-- Choose a subject --</option>
+						<option value="Question">Question</option>
+						<option value="Quote">Quote</option>
+						<option value="Feedback">Feedback</option>
+					</select>
 
 					<label for="message">Message:</label>
 					<textarea id="message" name="message" required></textarea>

@@ -269,7 +269,9 @@ nav ul li a {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
+	resize: vertical;
 	padding: 10px;
 	border-radius: 5px;
 	border: none;
