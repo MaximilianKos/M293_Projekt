@@ -201,6 +201,7 @@ nav ul li a {
 	min-height: 100vh;
 	padding: 155px 160px 0;
 	transition: all 0.2s;
+	text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -225,7 +226,6 @@ nav ul li a {
 }
 
 #intro {
-	text-align: center;
 	padding-bottom: 30px;
 }
 
