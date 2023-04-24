@@ -194,17 +194,17 @@ nav ul li a {
 }
 
 /*--------------------------------------------------------------
-# About Section
+# Projects Section
 --------------------------------------------------------------*/
 
-.about {
+.projects {
 	min-height: 100vh;
-	padding: 250px 160px 0;
+	padding: 155px 160px 0;
 	transition: all 0.2s;
 }
 
 @media only screen and (max-width: 767px) {
-	.about {
+	.projects {
 		padding: 180px 60px 50px !important;
 	}
 	header {
@@ -224,59 +224,97 @@ nav ul li a {
 	}
 }
 
-.intro {
-	max-width: 800px;
-	margin: 0 auto;
+#intro {
+	text-align: center;
+	padding-bottom: 30px;
 }
 
-.skills {
-	margin-top: 40px;
+#recent-projects {
+	text-align: center;
 }
 
-.row {
+#recent-projects a {
+	text-decoration: none;
+	color: black;
+}
+
+#recent-projects h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+.projects-grid {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
 }
 
-.col {
-	flex: 0 0 48%;
-}
-
-.skill {
-	margin-bottom: 20px;
-}
-
-.slider {
-	background-color: #ddd;
-	height: 10px;
-	border-radius: 5px;
+.project {
 	position: relative;
+	overflow: hidden;
+	width: 500px;
+	height: 500px;
 }
 
-.fill {
-	background-color: #0066cc;
+.project img {
+	width: 100%;
 	height: 100%;
-	border-radius: 5px;
+	object-fit: cover;
+	display: block;
+	transition: 0.3s ease;
+}
+
+.project-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s ease;
 }
 
-.percentage {
-	margin-left: 10px;
-	font-size: 18px;
-	font-weight: 500;
+.project-overlay h3 {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 10px;
 }
 
-#projects .github {
-	color: black;
-	font-size: inherit;
+.project-overlay p {
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 20px;
 }
 
-#projects {
-	text-decoration: underline;
-	color: black;
+.project-link {
+	color: #69b7ff;
+	font-weight: bold;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+.project-link:hover {
+	color: #fff;
+	background: #69b7ff;
+}
+
+.project:hover img {
+	transform: scale(1.1);
+}
+
+.project:hover .project-overlay {
+	opacity: 1;
 }
 
 /*--------------------------------------------------------------
