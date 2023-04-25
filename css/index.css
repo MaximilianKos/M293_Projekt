@@ -211,6 +211,7 @@ nav ul li a {
 /*--------------------------------------------------------------
 # landing Section
 --------------------------------------------------------------*/
+
 #landing {
 	height: 100vh;
 	background: url('/images/landing_background.png') top right no-repeat;
@@ -383,11 +384,17 @@ nav ul li a {
 	display: flex;
 	justify-content: center;
 	margin-top: 40px;
+	text-decoration: none;
+}
+
+#all-projects-div:hover {
+	text-decoration: underline;
 }
 
 #all-projects {
 	padding: 5px;
 }
+
 /*--------------------------------------------------------------
 # Newsletter Section
 --------------------------------------------------------------*/
@@ -472,6 +479,7 @@ nav ul li a {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 footer {
 	background-color: #f0eeee;
 	padding: 20px 0;
