@@ -229,18 +229,41 @@ nav ul li a {
 	padding-bottom: 30px;
 }
 
-#recent-projects {
-	text-align: center;
+#sort-filter-select {
+	margin-top: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #272829;
+	background-color: #ffffff;
+	padding: 5px 10px;
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
-#recent-projects a {
-	text-decoration: none;
-	color: black;
+#sort-filter-select:hover {
+	border-color: #69b7ff;
 }
 
-#recent-projects h2 {
-	font-size: 36px;
-	margin-bottom: 30px;
+#sort-filter-select:focus {
+	outline: none;
+	border-color: #69b7ff;
+}
+
+#sort-filter-select optgroup[label='Sort'] {
+	font-weight: bold;
+	color: #272829;
+}
+
+#sort-filter-select optgroup[label='Filter by Language'] {
+	font-weight: bold;
+	color: #272829;
+}
+
+#sort-filter-select option {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #272829;
 }
 
 .projects-grid {

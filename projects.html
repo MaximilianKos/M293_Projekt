@@ -29,10 +29,24 @@
 		<section class="projects">
 			<div id="intro">
 				<h3>Here are my past projects</h3>
+				<select id="sort-filter-select">
+					<optgroup label="Sort">
+						<option value="date">Sort by Date</option>
+						<option value="alphabetical">Sort Alphabetically</option>
+					</optgroup>
+					<optgroup label="Filter by Language">
+						<option value="HTML">HTML</option>
+						<option value="JavaScript">JavaScript</option>
+						<option value="Bootstrap">Bootstrap</option>
+						<option value="Python">Python</option>
+						<option value="PHP">PHP</option>
+					</optgroup>
+				</select>
 			</div>
+
 			<div class="container" id="projects">
 				<div class="projects-grid">
-					<div class="project">
+					<div class="project" data-languages="HTML, JavaScript">
 						<img src="images/todolist.png" alt="Picture of ToDo-List" />
 						<div class="project-overlay">
 							<p id="date"><i class="bx bxs-calendar"></i> April 2023</p>
@@ -41,17 +55,17 @@
 							<a href="https://github.com/MaximilianKos/UEK294-LB-B" class="project-link">View Project</a>
 						</div>
 					</div>
-					<div class="project">
-						<img src="images/portfolio.png" alt="Picture of the landingpage of this website" />
+					<div class="project" data-languages="HTML, Bootstrap, JavaScript, PHP">
+						<img src="images/erollsiu.png" />
 						<div class="project-overlay">
-							<p id="date"><i class="bx bxs-calendar"></i> April 2023</p>
-							<h3>Portfolio M293</h3>
-							<p>This Project is the website your currently on. This website was created as the final project for Module 293.</p>
-							<a href="https://github.com/MaximilianKos/M293_Projekt" class="project-link">View Project</a>
+							<p id="date"><i class="bx bxs-calendar"></i> March 2022</p>
+							<h3>ErollSiu Webstore</h3>
+							<p>This project is a simple webstore with a database for reviews that was created as a final project for secondary school. The frontend was created using a template and users could submit reviews which were approved and stored in the database.</p>
+							<a class="project-link"><i class="bx bx-lock-alt bx-tada"></i> Private Repository</a>
 						</div>
 					</div>
-					<div class="project">
-						<img src="images/filmlibrary.png" alt="Picture of Film Library" />
+					<div class="project" data-languages="HTML, JavaScript">
+						<img src="images/filmlibrary.png" />
 						<div class="project-overlay">
 							<p id="date"><i class="bx bxs-calendar"></i> March 2023</p>
 							<h3>Film Library</h3>
@@ -61,8 +75,8 @@
 					</div>
 
 					<!-- Second Row -->
-					<div class="project">
-						<img src="images/meiermueller.png" alt="" />
+					<div class="project" data-languages="HTML, Bootstrap, JavaScript">
+						<img src="images/meiermueller.png" />
 						<div class="project-overlay">
 							<p id="date"><i class="bx bxs-calendar"></i> October 2022</p>
 							<h3>Autumn Project</h3>
@@ -70,8 +84,8 @@
 							<a href="https://github.com/Mustafa-Sagaaro/ResponsiveWebseiteumsetzen" class="project-link">View Project</a>
 						</div>
 					</div>
-					<div class="project">
-						<img src="images/fakezeus.png" alt="" />
+					<div class="project" data-languages="HTML, JavaScript">
+						<img src="images/fakezeus.png" />
 						<div class="project-overlay">
 							<p id="date"><i class="bx bxs-calendar"></i> February 2023</p>
 							<h3>Sportferien Project</h3>
@@ -79,8 +93,8 @@
 							<a class="project-link"><i class="bx bx-lock-alt bx-tada"></i> Private Repository</a>
 						</div>
 					</div>
-					<div class="project">
-						<img src="images/kochrezept.png" alt="" />
+					<div class="project" data-languages="HTML, Bootstrap, JavaScript">
+						<img src="images/kochrezept.png" />
 						<div class="project-overlay">
 							<p id="date"><i class="bx bxs-calendar"></i> January 2023</p>
 							<h3>Winter CodeWeek</h3>
@@ -90,26 +104,27 @@
 					</div>
 
 					<!-- Third Row -->
-					<div class="project">
-						<img src="images/kanye.png" alt="" />
+					<div class="project" data-languages="HTML, JavaScript">
+						<img src="images/kanye.png" />
 						<div class="project-overlay">
-							<p id="date"><i class="bx bxs-calendar"></i> August 2023</p>
+							<p id="date"><i class="bx bxs-calendar"></i> August 2022</p>
 							<h3>Kanye West Quotes</h3>
 							<p>During the first week of my apprenticeship, I completed this project aimed at learning API implementation.</p>
 							<a href="https://github.com/MaximilianKos/Kanye-Quotes" class="project-link">View Project</a>
 						</div>
 					</div>
-					<div class="project">
-						<img src="images/erollsiu.png" alt="" />
+					<div class="project" data-languages="HTML, JavaScript">
+						<img src="images/portfolio.png" />
 						<div class="project-overlay">
-							<p id="date"><i class="bx bxs-calendar"></i> March 2022</p>
-							<h3>ErollSiu Webstore</h3>
-							<p>This project is a simple webstore with a database for reviews that was created as a final project for secondary school. The frontend was created using a template and users could submit reviews which were approved and stored in the database.</p>
-							<a class="project-link"><i class="bx bx-lock-alt bx-tada"></i> Private Repository</a>
+							<p id="date"><i class="bx bxs-calendar"></i> April 2023</p>
+							<h3>Portfolio M293</h3>
+							<p>This Project is the website your currently on. This website was created as the final project for Module 293.</p>
+							<a href="https://github.com/MaximilianKos/M293_Projekt" class="project-link">View Project</a>
 						</div>
 					</div>
-					<div class="project">
-						<img src="images/countbot.png" alt="" />
+
+					<div class="project" data-languages="JavaScript,">
+						<img src="images/countbot.png" />
 						<div class="project-overlay">
 							<p id="date"><i class="bx bxs-calendar"></i> June 2022</p>
 							<h3>Discord Count Bot</h3>
@@ -119,8 +134,8 @@
 					</div>
 
 					<!-- Fourth Row -->
-					<div class="project">
-						<img src="images/bravestats.png" alt="" />
+					<div class="project" data-languages="Python, PHP, JavaScript">
+						<img src="images/bravestats.png" />
 						<div class="project-overlay">
 							<p id="date"><i class="bx bxs-calendar"></i> September 2022</p>
 							<h3>Brave Stats</h3>
@@ -137,4 +152,5 @@
 		</section>
 	</body>
 	<script src="js/nav.js"></script>
+	<script src="js/sort.js"></script>
 </html>
