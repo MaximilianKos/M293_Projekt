@@ -1,3 +1,5 @@
+window.onload = () => sortByDate();
+
 document.getElementById('sort-filter-select').addEventListener('change', function (event) {
 	const selectedOption = event.target.value;
 
