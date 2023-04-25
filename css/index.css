@@ -24,11 +24,9 @@ section {
 }
 
 .container {
-	--bs-gutter-x: 1.5rem;
-	--bs-gutter-y: 0;
 	width: 100%;
-	padding-right: calc(var(--bs-gutter-x) * 0.5);
-	padding-left: calc(var(--bs-gutter-x) * 0.5);
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -99,24 +97,6 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-}
-
-@media (max-width: 992px) {
-	header {
-		width: 85%;
-		margin: 0 auto;
-		left: 0;
-		right: 0;
-		padding-block: 0.5rem;
-	}
-
-	nav {
-		min-width: 220px;
-	}
-	nav ul li a {
-		font-size: 15px;
-		padding: 10px !important;
-	}
 }
 
 nav {
@@ -210,6 +190,24 @@ nav ul li a {
 	transform: translate(-50%, -50%);
 }
 
+@media (max-width: 992px) {
+	header {
+		width: 85%;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		padding-block: 0.5rem;
+	}
+
+	nav {
+		min-width: 220px;
+	}
+	nav ul li a {
+		font-size: 15px;
+		padding: 10px;
+	}
+}
+
 /*--------------------------------------------------------------
 # landing Section
 --------------------------------------------------------------*/
@@ -221,12 +219,6 @@ nav ul li a {
 	justify-content: center !important;
 	flex-direction: column !important;
 	display: flex !important;
-}
-
-@media (min-width: 992px) {
-	#landing {
-		padding-left: 160px;
-	}
 }
 
 #landing h1 {
@@ -266,6 +258,19 @@ nav ul li a {
 	color: #69b7ff;
 }
 
+.scroll-down {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media (min-width: 992px) {
+	#landing {
+		padding-left: 160px;
+	}
+}
+
 @media (max-width: 992px) {
 	#landing {
 		text-align: center;
@@ -281,13 +286,6 @@ nav ul li a {
 		font-size: 24px;
 		line-height: 24px;
 	}
-}
-
-.scroll-down {
-	position: absolute;
-	bottom: 70px;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 /*--------------------------------------------------------------
@@ -462,6 +460,13 @@ nav ul li a {
 
 .newsletter-form button[type='submit']:hover {
 	background-color: #3b3b3b;
+}
+
+@media (max-width: 992px) {
+	.newsletter-form input[type='text'],
+	.newsletter-form input[type='email'] {
+		width: 70vw !important;
+	}
 }
 
 /*--------------------------------------------------------------

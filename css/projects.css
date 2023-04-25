@@ -193,21 +193,7 @@ nav ul li a {
 	transform: translate(-50%, -50%);
 }
 
-/*--------------------------------------------------------------
-# Projects Section
---------------------------------------------------------------*/
-
-.projects {
-	min-height: 100vh;
-	padding: 155px 160px 0;
-	transition: all 0.2s;
-	text-align: center;
-}
-
-@media only screen and (max-width: 767px) {
-	.projects {
-		padding: 180px 60px 50px !important;
-	}
+@media (max-width: 992px) {
 	header {
 		width: 85%;
 		margin: 0 auto;
@@ -221,8 +207,19 @@ nav ul li a {
 	}
 	nav ul li a {
 		font-size: 15px;
-		padding: 10px !important;
+		padding: 10px;
 	}
+}
+
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+
+.projects {
+	min-height: 100vh;
+	padding: 155px 160px 0;
+	transition: all 0.2s;
+	text-align: center;
 }
 
 #intro {
@@ -343,6 +340,17 @@ nav ul li a {
 
 .project:hover .project-overlay {
 	opacity: 1;
+}
+
+@media (max-width: 992px) {
+	.projects {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#projects {
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
+	}
 }
 
 /*--------------------------------------------------------------
