@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #272829;
+	margin: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section {
+	padding: 60px 0;
+	overflow: hidden;
+}
+
+.container {
+	width: 100%;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a {
+	color: #0563bb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #067ded;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+header {
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	padding-block: 1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+nav {
+	min-width: 28rem;
+	background: white;
+	color: #0e0e0e;
+	border-radius: 100vw;
+	margin-top: 1rem;
+}
+
+nav ul {
+	padding: 1.5rem;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	isolation: isolate;
+}
+
+nav ul li a {
+	color: #0e0e0e;
+	text-decoration: none;
+	padding: 1.5rem;
+	font-weight: 700;
+}
+
+.selectedLink {
+	position: absolute;
+	width: 1.5rem;
+	aspect-ratio: 1/1;
+	background: #69b7ff;
+	border-radius: 50%;
+	top: 0;
+	left: 12px;
+	transition: transform 0.5s ease;
+}
+
+.selectedLink .side {
+	background: #69b7ff;
+	width: 1.5rem;
+	aspect-ratio: 1/1;
+	position: absolute;
+	top: 0;
+	border-radius: 0 0 0 100%;
+}
+
+.side.left {
+	left: -50%;
+}
+
+.side.right {
+	right: -50%;
+	transform: rotateY(180deg);
+}
+
+.selectedLink .outside {
+	background: #69b7ff;
+	width: 1.5rem;
+	aspect-ratio: 1/1;
+	position: absolute;
+	top: 0;
+	clip-path: polygon(79% 25%, 30% 0, 100% 0, 100% 100%);
+}
+
+.outside.left {
+	left: -140%;
+}
+
+.outside.right {
+	right: -140%;
+	transform: rotateY(180deg);
+}
+
+.selectedLink .outside::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: white;
+	border-radius: 0 100% 0 0 / 0 50% 0 0;
+}
+
+.selectedLink .dot {
+	position: absolute;
+	width: 0.5rem;
+	aspect-ratio: 1/1;
+	background: white;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 992px) {
+	header {
+		width: 85%;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		padding-block: 0.5rem;
+	}
+
+	nav {
+		min-width: 220px;
+	}
+	nav ul li a {
+		font-size: 15px;
+		padding: 10px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Newsletter Section
+--------------------------------------------------------------*/
+
+.newsletter {
+	min-height: 60vh;
+	padding: 155px 500px 0;
+	transition: all 0.2s;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+	.newsletter {
+		padding: 180px 60px 50px !important;
+	}
+}
+
+.newsletter-form {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.newsletter-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.newsletter-form label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.newsletter-form input,
+.newsletter-form select,
+.newsletter-form textarea {
+	resize: vertical;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 15px;
+}
+
+.newsletter-form textarea {
+	height: 100px;
+}
+
+.newsletter-form input:focus,
+.newsletter-form textarea:focus {
+	outline: none;
+}
+
+.newsletter-form button[type='submit'] {
+	background-color: #69b7ff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.newsletter-form button[type='submit']:hover {
+	background-color: #3f8fdf;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+	background-color: #f0eeee;
+	padding: 20px 0;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	font-size: 14px;
+	color: #4d4d4d;
+}
+
+footer.newsletter {
+	padding: 38px 500px 38px;
+	min-height: unset;
+}
