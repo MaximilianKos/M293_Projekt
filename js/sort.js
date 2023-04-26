@@ -17,9 +17,9 @@ function sortByDate() {
 	const projects = Array.from(projectContainer.children);
 
 	projects.sort((a, b) => {
-		const dateA = new Date(a.querySelector('#date').textContent.trim().split(' ').slice(-2).join(' '));
-		const dateB = new Date(b.querySelector('#date').textContent.trim().split(' ').slice(-2).join(' '));
-		return dateB - dateA;
+		const startDate = new Date(a.querySelector('#date').textContent.trim().split(' ').slice(-2).join(' '));
+		const endDate = new Date(b.querySelector('#date').textContent.trim().split(' ').slice(-2).join(' '));
+		return endDate - startDate;
 	});
 
 	projectContainer.innerHTML = '';
@@ -31,9 +31,9 @@ function sortAlphabetically() {
 	const projects = Array.from(projectContainer.children);
 
 	projects.sort((a, b) => {
-		const titleA = a.querySelector('h3').textContent;
-		const titleB = b.querySelector('h3').textContent;
-		return titleA.localeCompare(titleB);
+		const firstTitle = a.querySelector('h3').textContent;
+		const secondTitle = b.querySelector('h3').textContent;
+		return firstTitle.localeCompare(secondTitle);
 	});
 
 	projectContainer.innerHTML = '';
