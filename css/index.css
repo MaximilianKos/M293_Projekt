@@ -242,6 +242,11 @@ nav ul li a {
 	letter-spacing: 1px;
 }
 
+#landing #about {
+	max-width: 30%;
+	font-size: 20px;
+}
+
 #landing .social-links {
 	margin-top: 30px;
 }
@@ -445,12 +450,12 @@ nav ul li a {
 }
 
 .newsletter-form input[type='text'] {
-	width: 25vw;
+	width: 50vw;
 	margin-bottom: 35px;
 }
 
 .newsletter-form input[type='email'] {
-	width: 25vw;
+	width: 50vw;
 	margin-bottom: 20px;
 }
 
@@ -459,7 +464,7 @@ nav ul li a {
 	color: #fff;
 	border: none;
 	border-radius: 4px;
-	padding: 10px 15px;
+	padding: 10px 105px;
 	font-size: 16px;
 	cursor: pointer;
 	margin-left: 10px;

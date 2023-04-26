@@ -19,3 +19,11 @@ document.querySelectorAll('nav li').forEach((item) => {
 });
 
 checkActive();
+
+function updateYear() {
+	var year = new Date().getFullYear();
+	var footer = document.querySelector('footer p');
+	footer.textContent = '\u00A9 ' + year + ' Maximilian Kos';
+}
+
+updateYear();
