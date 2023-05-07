@@ -4,7 +4,7 @@
 
 #landing {
 	height: 100vh;
-	background: url('/images/landing_background.png') top right no-repeat;
+	background: url('../images/landing_background.png') top right no-repeat;
 	background-size: cover;
 	position: relative;
 	justify-content: center !important;
